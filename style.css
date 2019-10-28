@@ -1,3 +1,19 @@
 body{
-    color: black;
+    background-color: black;
 }
+
+.thing-that-moves {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    top: 0;
+    left: 0;
+    transition: left 0.5s; /* BYO prefixes */
+  }
+  @media (min-width: 400px) {
+    left: 50px;
+  }
+  @media (min-width: 600px) {
+    left: 100px;
+  }
