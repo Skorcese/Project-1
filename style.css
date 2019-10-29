@@ -1,19 +1,45 @@
 body{
     background-color: black;
+    color:  black;
+    font-size: 25px;
+    font-family: 'Rubik Mono One', sans-serif;
+    animation-name: bgSwell;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.thing-that-moves {
+@keyframes bgSwell{
+  0%{
+    background-color: black;
+    color: white;
+  }
+
+  100%{
+    background-color: white;
+    color: black;
+  }
+}
+
+/* .thing-that-moves {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: red;
+    background: rgba(175, 51, 2, 0.719);
     top: 0;
     left: 0;
-    transition: left 0.5s; /* BYO prefixes */
-  }
+    transition: left 2s;
+  } 
+
   @media (min-width: 400px) {
-    left: 50px;
+    .thing-that-moves{
+
+      left: 50px;
+    }
   }
   @media (min-width: 600px) {
-    left: 100px;
-  }
+    .thing-that-moves{
+
+      left: 100px;
+    }
+  } */
