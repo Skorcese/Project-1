@@ -2,9 +2,9 @@ body{
     background-color: black;
     color:  black;
     font-size: 25px;
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Biryani', sans-serif;
     animation-name: bgSwell;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
