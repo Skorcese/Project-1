@@ -1,8 +1,12 @@
+:root{
+  --orange: #fdb61d;
+}
+
 body{
     background-color: black;
     color:  black;
     font-size: 25px;
-    font-family: 'Biryani', sans-serif;
+    font-family: 'News Cycle', sans-serif;
     animation-name: bgSwell;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -19,30 +23,102 @@ body{
   border: 1px solid black;
 }
 
-.wrapper>.welcome{
-  box-sizing: border-box;
-  text-align: center;
-  height: 400px;
-  margin-top: 30px;
-  background: linear-gradient(260deg, yellow, lime);
-  padding: 10px;
-}
-
 nav{
   /* font-size: 40px; */
   display: grid;
   grid-template-columns: 1fr 8fr auto 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  /* border: 1px solid black; */
+  height: 30px;
+  justify-items: baseline;
+  /* border: 10px solid black; */
 }
 
-
-.item{
+ul{
+  display: flex;
+  list-style-type: none;
   border: 1px solid black;
 }
 
+li{
+  padding-right: 20px;;
+}
+
+.item:hover{
+  background: greenyellow;
+  font-weight: bolder;
+}
+
+/* .item,.left,.title{
+  justify-self: flex-start;
+} */
+
 .left{
-  background-color: orange;
+  background-color: var(--orange);
+}
+
+.wrapper>.welcome{
+  background: url(img/welcome.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  height: 400px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+h1{
+  color: azure;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.round{
+  background-color: white;
+  width: 50px;
+  height: 10x;
+  border-radius: 100px;
+}
+
+.happy{
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.b1{
+  /* position: relative; */
+  
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.b2{
+  /* position: relative; */
+  /* top: 10px; */
+  /* border: 1px solid black; */
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(260deg, var(--orange), rgba(255, 166, 0, 0.575));
+}
+
+.aboutme{
+  display: grid;
+  grid-template-columns: 1fr 3fr 8fr;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid black;
 }
 
 @keyframes bgSwell{
@@ -52,7 +128,7 @@ nav{
   }
 
   100%{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.377);
     color: black;
   }
 }
