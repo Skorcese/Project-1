@@ -1,16 +1,14 @@
-:root{
+:root{  
   --orange: #FFC53D;
+  --white: ##FAFAFF;
+  --black: #515151;
 }
 
-*{
-  box-sizing: border-box;
-}
+*{  box-sizing: border-box;}
 
 body{
     height: 100%;
-    background-color: black;
-    color:  black;
-    font-size: 25px;
+    color:  var(--black);
     font-family: Raleway, sans-serif;
     animation-name: bgSwell;
     animation-duration: 1s;
@@ -24,40 +22,37 @@ body{
   grid-template-rows: 1fr auto;
 }
 
-.wrapper > * {
-  border: 1px solid black;
-}
-
 nav{
+  margin-top: 50px;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.02em;
   font-weight: bold;
   display: grid;
-  grid-template-columns: 1fr 8fr auto 1fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   height: 30px;
   justify-items: baseline;
-  /* border: 10px solid black; */
+}
+
+.logo{  justify-self: right;}
+.title{font-size: 24px;}
+
+.item{
+  text-decoration: none;
+  color: var(--black);
+  padding: 10px;
+  align-self: center;
 }
 
 .item:hover{
-  background: greenyellow;
+  background: var(--orange);
   font-weight: bolder;
-}
-
-/* .item,.left,.title{
-  justify-self: flex-start;
-} */
-
-.left{
-  background-color: var(--orange);
 }
 
 .wrapper>.welcome{
   background: url(img/welcome2.jpg);
   background-size: cover;
-  /* background-size: contain; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -79,7 +74,7 @@ nav{
 }
 
 .round{
-  background-color: white;
+  background-color: var(--white);
   width: 50px;
   height: 10x;
   border-radius: 100px;
@@ -122,14 +117,21 @@ nav{
   padding: 100px;
 }
 
-.grd{
-  grid-column: span 3;
-}
+.grd{  grid-column: span 3;}
 
 .circle{
   border-radius: 100px;
   background-color: var(--orange);
   grid-row: 2;
+}
+
+.person{
+  display: flex;
+  flex-direction: column;
+}
+
+.bold{
+  font-weight: 900;
 }
 
 .lorem{
@@ -144,13 +146,13 @@ nav{
 
 @keyframes bgSwell{
   0%{
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
   }
 
   100%{
-    background-color: rgba(255, 255, 255, 0.377);
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
   }
 }
 
