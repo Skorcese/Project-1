@@ -1,12 +1,17 @@
 :root{
-  --orange: #fdb61d;
+  --orange: #FFC53D;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 body{
+    height: 100%;
     background-color: black;
     color:  black;
     font-size: 25px;
-    font-family: 'News Cycle', sans-serif;
+    font-family: Raleway, sans-serif;
     animation-name: bgSwell;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -24,23 +29,16 @@ body{
 }
 
 nav{
-  /* font-size: 40px; */
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  font-weight: bold;
   display: grid;
   grid-template-columns: 1fr 8fr auto 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   height: 30px;
   justify-items: baseline;
   /* border: 10px solid black; */
-}
-
-ul{
-  display: flex;
-  list-style-type: none;
-  border: 1px solid black;
-}
-
-li{
-  padding-right: 20px;;
 }
 
 .item:hover{
@@ -57,18 +55,20 @@ li{
 }
 
 .wrapper>.welcome{
-  background: url(img/welcome.jpg);
+  background: url(img/welcome2.jpg);
   background-size: cover;
+  /* background-size: contain; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   text-align: center;
-  height: 400px;
+  height: 585px;
   margin-top: 30px;
   padding: 10px;
 }
 
-h1{
+.welcome>h1{
+  font-size: 100px;
   color: azure;
 }
 
@@ -117,7 +117,28 @@ h1{
 .aboutme{
   display: grid;
   grid-template-columns: 1fr 3fr 8fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  border: 1px solid black;
+  padding: 100px;
+}
+
+.grd{
+  grid-column: span 3;
+}
+
+.circle{
+  border-radius: 100px;
+  background-color: var(--orange);
+  grid-row: 2;
+}
+
+.lorem{
+  font-size: 18px;
+  line-height: 172.35%;
+
+}
+
+.aboutme>*{
   border: 1px solid black;
 }
 
