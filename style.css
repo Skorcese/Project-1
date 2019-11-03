@@ -174,7 +174,7 @@ h2{
 
 .line{
   border: 2px dashed var(--orange);
-  margin-left: 20px;
+  margin-left: 0px;
   margin-right: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -214,7 +214,7 @@ h2:nth-of-type(2){margin-top: 20%;}
 .skill{
   color: var(--orange);
   font-size: 40px;
-  text-align-last: center;
+  text-align: center;
 }
 
 .icon{
@@ -241,6 +241,12 @@ h2:nth-of-type(2){margin-top: 20%;}
   width: 75%;
   justify-self: center;
   left: 10%;
+  flex-direction: column;
+}
+
+.contactDown>input{
+  color: rgb(209, 209, 209);
+  border-radius: 10px;
 }
 
 footer{
@@ -266,21 +272,39 @@ footer{
   }
 }
 
+/* MINIMUM */
 @media screen and (max-width: 400px) {
   body{
     background: blueviolet !important;
   }
-}
-@media screen and (max-width: 979px) {
-  html body{background: yellow !important;}
 
-  nav{
+  .wrapper>nav{
     display: flex;
-    justify-content: space-evenly;;
+    justify-content: space-between;
     font-size: 20px;
   }
 
-  .welcome{height:400px}
+  .welcome>h1{
+    font-size: 60px;
+  }
+
+  .icon>p{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* MEDIUM */
+@media screen and (max-width: 979px) {
+  /* html body{background: yellow !important;} */
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+  .welcome{height:450px}
   .title{display: none;}
   .item{padding: 0;}
 
@@ -300,12 +324,15 @@ footer{
     left: 0;
     font-size: 150%;
   }
+
+  .icon{
+    font-size: 10px;
+    text-align: center;
+    left: -10px;
+  }
 }
 
-@media screen and (min-width: 980px) {
-
-}
-
+/* LARGE */
 @media screen and (max-width: 1600px){
   #about>.aboutme{
     flex-direction: column;
@@ -321,7 +348,7 @@ footer{
     margin: 20px 20px 20px 20px;
   }
 
-  .back{height: 105%;}
+  .back{height: 105%; top: -1%;}
 
   .astro{
     justify-self: center;
