@@ -152,7 +152,7 @@ h2{
 }
 
 .astro{
-  width: 30%;
+  /* width: 30%; */
   /* flex: 1 1 100%; */
   margin-left: 1%;
   font-size: 36px;
@@ -257,7 +257,7 @@ footer{
   color: azure;
   height: 40px;
   padding-top: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 @keyframes bgSwell{
@@ -289,7 +289,7 @@ footer{
   }
 
   .icon>p{
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 }
@@ -325,8 +325,8 @@ footer{
     font-size: 150%;
   }
 
-  .icon{
-    font-size: 10px;
+  .icon>i{
+    /* font-size: 10px; */
     text-align: center;
     left: -10px;
   }
