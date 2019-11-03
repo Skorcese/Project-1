@@ -25,9 +25,9 @@ body{
 }
 
 nav{
-  margin-top: 50px;
-  font-size: 26px;
-  line-height: 21px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 162.5%;
   letter-spacing: 0.02em;
   font-weight: bold;
   display: grid;
@@ -38,7 +38,6 @@ nav{
 }
 
 .logo{  justify-self: right;}
-.title{font-size: 24px;}
 
 .item{
   text-decoration: none;
@@ -57,7 +56,6 @@ nav{
   background-size: 600% 600%;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   text-align: center;
   height: 585px;
   margin-top: 30px;
@@ -76,9 +74,7 @@ nav{
   color: azure;
 }
 
-header p{
-  font-size: 30px;
-}
+header p{font-size: 30px;}
 
 .btns{
   display: flex;
@@ -87,12 +83,12 @@ header p{
 
 .round{
   padding: 20px;
-  font-size: 30px;
+  font-size: 187.5%;
 }
 
 .happy{
   text-align: center;
-  font-size: 30px;
+  font-size: 187.5%;
   padding: 50px;
 }
 
@@ -155,11 +151,11 @@ h2{
   left: 10%;
 }
 
-.photo{
+.astro{
   width: 30%;
   /* flex: 1 1 100%; */
   margin-left: 1%;
-  font-size: 40px;
+  font-size: 36px;
   align-self: center;
   justify-self: center;
 }
@@ -203,10 +199,7 @@ h2{
   z-index: -1;
 }
 
-h2:nth-of-type(2){
-  margin-top: 20%;
-  /* left: 40%; */
-}
+h2:nth-of-type(2){margin-top: 20%;}
 
 .skills{
   display: flex;
@@ -236,18 +229,18 @@ h2:nth-of-type(2){
   margin-top: 10%;
 }
 
-.icon>p{
-  font-size: 28px;
-}
+.icon>p{font-size: 28px;}
 
 .skills>.back{
   left: 20%;
 }
 
-#about #skills{
-  position: static;
+.contactDown{
+  position: relative;
   display: flex;
-
+  width: 75%;
+  justify-self: center;
+  left: 10%;
 }
 
 @keyframes bgSwell{
@@ -262,21 +255,31 @@ h2:nth-of-type(2){
   }
 }
 
-@media only screen and (min-width: 400px) {
-  *{
-    display: flex;
-    flex-direction: column;
-    font-size: 0.9rem;
-  }
-
-  .welcome>h1{
-    font-size: 20px;
-  }
-
-  .welcome{
-    display: none;
-    font-size: 0.5rem;
+@media screen and (max-width: 500px) {
+  body{
+    background: blueviolet !important;
   }
 }
-@media (min-width: 600px) {
+@media screen and (max-width: 979px) {
+  html body{
+    background: yellow !important;
+  }
+
+
+  .aboutme>*{
+    font-size: 87%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+}
+
+@media screen and (max-width: 1600px){
+  #about>.aboutme{
+    flex-direction: column !important;
+  }
+
+  .astro{
+    font-size: 20px;
+  }
 }
