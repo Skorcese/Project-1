@@ -265,6 +265,28 @@ h2:nth-of-type(2){margin-top: 20%;}
     background: yellow !important;
   }
 
+  nav{
+    display: flex;
+    justify-content: space-evenly;;
+    font-size: 20px;
+  }
+
+  .title{
+    display: none;
+  }
+
+  .item{
+    padding: 0;
+  }
+
+  .welcome>h1{
+    font-size: 80px;
+  }
+
+  .btn{
+    font-size: 18px;
+    left: -1%;
+  }
 
   .aboutme>*{
     font-size: 87%;
@@ -276,10 +298,22 @@ h2:nth-of-type(2){margin-top: 20%;}
 
 @media screen and (max-width: 1600px){
   #about>.aboutme{
-    flex-direction: column !important;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
+
+  #skills>.skills{
+    flex-direction: column;
+  }
+
+  .line{
+    margin: 20px 20px 20px 20px;
   }
 
   .astro{
+    justify-self: center;
+    margin: 10px 20px 0 0;
     font-size: 20px;
   }
 }
